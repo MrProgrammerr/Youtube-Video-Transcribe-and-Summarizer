@@ -33,8 +33,6 @@ def generate_summary(transcribed_text):
     response = model.generate_content(prompt+transcribed_text)
     return response.text
 
-text= get_transcript_from_yt("https://www.youtube.com/watch?v=HFfXvfFe9F8")
-print(generate_summary(text))
 
 st.title("Youtube Text Transcriber and Summarizer")
 yt_link = st.text_input("Enter Youtube Video URL : ")
