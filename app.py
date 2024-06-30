@@ -32,7 +32,7 @@ def extract_youtube_video_id(url):
 
 def get_transcript_from_yt(video_id):
     try:
-        transcript_text=YouTubeTranscriptApi.get_transcript(video_id, languages=('en',))
+        transcript_text=YouTubeTranscriptApi.get_transcript(video_id, languages=('en','hi'))
         transcript = ""
         for i in transcript_text:
             transcript += " " + i["text"]
@@ -40,7 +40,7 @@ def get_transcript_from_yt(video_id):
         return transcript
 
     except Exception as e:
-        raise e
+        return "Subtitle Not Available for this Video."
 
 
 def generate_summary(transcribed_text):
@@ -49,7 +49,7 @@ def generate_summary(transcribed_text):
     return response.text
 
 
-st.title("Youtube Text Transcriber and Summarizer")
+st.title("Youtube Video Transcriber and Summarizer")
 yt_link = st.text_input("Enter Youtube Video URL : ")
 video_id = ""
 
