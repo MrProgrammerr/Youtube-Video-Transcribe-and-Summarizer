@@ -18,7 +18,7 @@ This Streamlit application allows users to input a YouTube video URL, extract it
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/youtube-transcriber-summarizer.git
+   git clone https://github.com/MrProgrammerr/Youtube-Video-Transcribe-and-Summarizer
    cd youtube-transcriber-summarizer
    ```
 Create a virtual environment and activate it:
