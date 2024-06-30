@@ -47,3 +47,17 @@ Enter the URL of the YouTube video you want to transcribe and summarize.
 Click on the "Get Transcribed Text" button to see the transcript.
 
 Click on the "Get Detailed Summary" button to generate and view the summary.
+
+## Screenshots
+
+### Home Page
+![land](screenshots/ss1.png)
+
+### Paste the Link
+![link](screenshots/ss2.png)
+
+### Get Transcript
+![transcript](screenshots/ss3.png)
+
+### Summarise it
+![summary](screenshots/ss4.png)
